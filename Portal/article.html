@@ -1,0 +1,56 @@
+<extend name="Public:newbase" />
+<block name="main">
+	<css file="/Theme/LocalLife/Css/mui.min.css" />
+	<css file="/Theme/LocalLife/Css/index.css" />
+	<css file="/Theme/LocalLife/Css/article.css" />
+	<div id="loadingMask" style="display:none;">
+		<div id="noSupport">
+			<div id="noSuppIcon">
+				
+			</div>
+			<div id="noSuppText">
+				<div id="noSuppText1">暂不支持该浏览器预览!</div>
+				<div id="noSuppText2">推荐使用Chrome（谷歌）、QQ、360、搜狗浏览器的最新版本，或者直接使用手机查看效果。</div>
+			</div>
+		</div>
+	</div>
+	<header class="mui-bar mui-bar-nav">
+		<a href="javascript:;" class="mui-icon mui-action-back mui-icon-left-nav mui-pull-left"></a>
+		<a id="homeBtn" href="javascript:;" class="mui-icon mui-icon-home mui-pull-right"></a>
+		<h1 class="mui-title mui-ellipsis"></h1>
+	</header>
+	<div class="mui-content">
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<div class="wz_box">
+					<div class="bluemp_block_article_detail">
+
+						<div class="bluemp_block_article_detail_wapper"><span class="bluemp_block_article_detail_title"></span>
+							<p class="bluemp_block_article_detail_info">
+								<span class="detail_info_time"></span>
+								<span class="detail_info_author"></span>
+							</p>
+							<p class="bluemp_block_article_detail_cover"></p>
+							<p class="detail_summary" style="display:none"></p>
+							<div class="bluemp_block_article_detail_content">
+
+							</div>
+						</div>
+					</div>
+					<div class="bluemp_block_article_options">
+
+					</div>
+					<div class="wz_txt article_vote_container" style="margin-top:1em"></div>
+					<div class="bluemp_block_article_reply_list">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<js file="/Theme/LocalLife/Js/mui.min.js" />
+	<js file="/Theme/LocalLife/Js/mui.pullToRefresh.js" />
+	<js file="/Theme/LocalLife/Js/common.js" />
+	<js file="/Theme/LocalLife/Js/phantom-limb.js" />
+	<js file="/Theme/LocalLife/Js/article.js" />
+</block>

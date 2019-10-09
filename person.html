@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<button></button>
+		
+		<script src="jquery-2.1.1.min.js"></script>
+		<script src="fake.js"></script>
+		<script>
+			new bluemp.block.userLogin({
+	            isDefault: false,
+	            fnSuccess: function(data) {
+					console.log('userLogindata------------');
+					console.log(data);
+					if(data.is_login){
+						$('button').html('退出').click(function(){
+							bluemp.logout();
+						});
+					}else{
+						$('button').html('登录').click(function(){
+							bluemp.login();
+						});
+					}
+	            }
+	        });
+		</script>
+	</body>
+</html>
